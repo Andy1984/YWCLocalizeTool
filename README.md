@@ -8,6 +8,9 @@ There are three tabs
 * The third tab demonstrate the table of comparisons.
 * Input source language and destination language in the below, according to the table of comparisons.
 
+Attention: There cannot be `";` in the comment.  The logic is search `";` and the `"` before. Extract the content in the middle and use Baidu api to translate. 
+
+
 ##使用方法
 整个app分3栏
 
@@ -15,4 +18,6 @@ There are three tabs
 * 第二栏输出翻译完的文字
 * 第三栏是国际化语言的对照表
 * 第一栏第二栏下可以填写源语言和目标语言
+注意: 注释里不能有`";`
+[具体思路](http://www.jianshu.com/p/ec2bf75a9d41)
 
