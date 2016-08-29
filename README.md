@@ -1,6 +1,5 @@
 # YWCLocalizeTool
-![licecap.gif](http://upload-images.jianshu.io/upload_images/1398180-32d10c9420329bed.gif?imageMogr2/auto-orient/strip)
-
+![licecap.gif](http://upload-images.jianshu.io/upload_images/1398180-30e03f081b86b13a.gif?imageMogr2/auto-orient/strip)
 ##How to use
 There are three tabs
 
