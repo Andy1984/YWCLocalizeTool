@@ -12,10 +12,6 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-
 - (IBAction)translate:(id)sender {
     
     NSMutableString *mutableContent = [NSMutableString stringWithString:self.inputTextView.textStorage.string];
@@ -30,12 +26,10 @@
         startLocation += (backRange.location - startLocation);
         startLocation += 2;
         
-        NSRange frontRange = [mutableContent rangeOfString:@"\"" options:NSBackwardsSearch range:NSMakeRange(0, backRange.location-1/*要不要－1*/)];
+        NSRange frontRange = [mutableContent rangeOfString:@"\"" options:NSBackwardsSearch range:NSMakeRange(0, backRange.location-1)];
         NSRange needTranslationRange = NSMakeRange(frontRange.location+1, backRange.location - (frontRange.location + 1));
         NSString *needTranlationString = [mutableContent substringWithRange:needTranslationRange];
         [needTranslateStringArray addObject:needTranlationString];
-        
-        
     }
     
     NSMutableArray <NSDictionary *>*responses = [NSMutableArray array];
@@ -49,9 +43,6 @@
         NSString *secret = @"Mi_MQ_2JaIDO4MpX37YU";
         NSNumber *salt = [NSNumber numberWithInteger:arc4random()%10000];
         NSString *q = needTranslate;
-        if (q == nil || [q isEqualToString:@""]) {
-            NSLog(@"kong");
-        }
         NSString *signBeforeMD5 = [NSString stringWithFormat:@"%@%@%@%@",appID,q,salt,secret];
         ;
         NSString *sign = [self getmd5WithString:signBeforeMD5];
@@ -94,12 +85,9 @@
         }
         startLocation += (backRange.location - startLocation);
         startLocation += 2;
-        
-        NSRange frontRange = [mutableContent rangeOfString:@"\"" options:NSBackwardsSearch range:NSMakeRange(0, backRange.location-1/*要不要－1*/)];
+        NSRange frontRange = [mutableContent rangeOfString:@"\"" options:NSBackwardsSearch range:NSMakeRange(0, backRange.location-1)];
         NSRange needTranslationRange = NSMakeRange(frontRange.location+1, backRange.location - (frontRange.location + 1));
-        
         NSString *afterTranslationString = responses[i][@"trans_result"][0][@"dst"];
-        NSLog(@"%@",afterTranslationString);
         [mutableContent replaceCharactersInRange:needTranslationRange withString:afterTranslationString];
         startLocation = (startLocation - needTranslationRange.length + afterTranslationString.length);
         i++;
@@ -117,12 +105,6 @@
         [outPutStr appendFormat:@"%02x", digist[i]];//小写x表示输出的是小写MD5，大写X表示输出的是大写MD5
     }
     return [outPutStr lowercaseString];
-}
-
-- (void)setRepresentedObject:(id)representedObject {
-    [super setRepresentedObject:representedObject];
-
-    // Update the view, if already loaded.
 }
 
 @end
