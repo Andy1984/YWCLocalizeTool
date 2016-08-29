@@ -61,7 +61,6 @@
             if (responses.count == needTranslateStringArray.count) {
                 [self replaceOriginalString:mutableContent withResponses:responses];
             }
-            
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             NSLog(@"error-> %@",error);
         }];
@@ -90,7 +89,6 @@
         startLocation = (startLocation - needTranslationRange.length + afterTranslationString.length);
         i++;
     }
-    NSLog(@"final -> %@", mutableContent);
     [self.outputTextView setString:mutableContent];
 }
 
