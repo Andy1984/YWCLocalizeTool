@@ -39,6 +39,11 @@
     }
     
     NSMutableArray <NSDictionary *>*responses = [NSMutableArray array];
+    for (int i = 0; i < needTranslateStringArray.count; i++) {
+        [responses addObject:@{}];
+    }
+    __block int factualResponsesCount = 0;
+    int tag = 0;
     for (NSString *needTranslate in needTranslateStringArray) {
         NSNumber *appID = @20160825000027431;
         NSString *secret = @"Mi_MQ_2JaIDO4MpX37YU";
@@ -64,15 +69,16 @@
                 NSLog(@"error -> %@", responseObject);
                 return;
             }
-            
-            [responses addObject:responseObject];
-            if (responses.count == needTranslateStringArray.count) {
+            [responses replaceObjectAtIndex:tag withObject:responseObject];
+            factualResponsesCount++;
+            if (factualResponsesCount == needTranslateStringArray.count) {
                 [self replaceOriginalString:mutableContent withResponses:responses];
             }
             
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             NSLog(@"error-> %@",error);
         }];
+        tag++;
     }
 }
 
