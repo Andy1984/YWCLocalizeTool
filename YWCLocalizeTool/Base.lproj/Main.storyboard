@@ -671,11 +671,11 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="765" height="343"/>
+                        <rect key="frame" x="0.0" y="0.0" width="763" height="563"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="Qxl-N9-uJ3">
-                                <rect key="frame" x="0.0" y="0.0" width="765" height="50"/>
+                                <rect key="frame" x="0.0" y="0.0" width="763" height="50"/>
                                 <subviews>
                                     <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="VgH-vr-fqQ">
                                         <rect key="frame" x="120" y="14" width="50" height="22"/>
@@ -708,7 +708,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="s6U-Ve-kyF">
-                                        <rect key="frame" x="660" y="8" width="96" height="32"/>
+                                        <rect key="frame" x="658" y="8" width="96" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="Kvv-dW-Kag"/>
                                             <constraint firstAttribute="width" constant="84" id="tJ8-Nl-55U"/>
@@ -748,16 +748,16 @@
                                 </constraints>
                             </customView>
                             <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsb-dx-Lpx">
-                                <rect key="frame" x="0.0" y="50" width="255" height="293"/>
+                                <rect key="frame" x="0.0" y="50" width="255" height="513"/>
                                 <clipView key="contentView" id="Yt5-Su-9pn">
-                                    <rect key="frame" x="1" y="1" width="253" height="291"/>
+                                    <rect key="frame" x="1" y="1" width="253" height="511"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView importsGraphics="NO" richText="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="C3m-xT-mSK">
-                                            <rect key="frame" x="0.0" y="0.0" width="253" height="468"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="253" height="511"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <size key="minSize" width="253" height="291"/>
+                                            <size key="minSize" width="253" height="511"/>
                                             <size key="maxSize" width="1438" height="10000000"/>
                                             <attributedString key="textStorage">
                                                 <fragment>
@@ -799,7 +799,7 @@
                                                 </fragment>
                                             </attributedString>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="253" height="291"/>
+                                            <size key="minSize" width="253" height="511"/>
                                             <size key="maxSize" width="1438" height="10000000"/>
                                         </textView>
                                     </subviews>
@@ -810,24 +810,410 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="aLk-D4-hsx">
-                                    <rect key="frame" x="238" y="1" width="16" height="291"/>
+                                    <rect key="frame" x="238" y="1" width="16" height="511"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
                             <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYk-Eh-qLe">
-                                <rect key="frame" x="508" y="50" width="255" height="293"/>
+                                <rect key="frame" x="508" y="50" width="255" height="513"/>
                                 <clipView key="contentView" id="r7e-Jv-UGc">
-                                    <rect key="frame" x="1" y="1" width="253" height="291"/>
+                                    <rect key="frame" x="1" y="1" width="253" height="511"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="gf3-cx-fT0">
-                                            <rect key="frame" x="0.0" y="0.0" width="253" height="291"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="253" height="511"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <size key="minSize" width="253" height="291"/>
+                                            <size key="minSize" width="253" height="511"/>
                                             <size key="maxSize" width="463" height="10000000"/>
+                                            <attributedString key="textStorage">
+                                                <fragment>
+                                                    <string key="content">Table of comparisons
+zh	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="中文">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> Chinese
+en	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="英语">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> English
+yue	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="粤语">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> Yue Chinese/Cantonese
+wyw	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="文言文">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> writings in classical chinese
+jp	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="日语">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> Japanese
+kor	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="韩语">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> Korean
+fra	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="法语">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> French
+spa	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="西班牙语">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> Spanish
+th	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="泰语">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> Thai
+ara	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="阿拉伯语">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> Arabic
+ru	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="俄语">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> Russian
+pt	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="葡萄牙语">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> Portugal
+de	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="德语">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> German
+it	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="意大利语">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> Italian
+el	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="希腊语">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> Greek
+nl	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="荷兰语">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> Dutch
+pl	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="波兰语">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> Polish
+bul	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="保加利亚语">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> Bulgarian
+est	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="爱沙尼亚语">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> Estonian
+dan	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="丹麦语">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> Danish
+fin	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="芬兰语">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> Finnish
+cs	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="捷克语">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> Czech
+rom	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="罗马尼亚语">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> Romanian
+slo	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="斯洛文尼亚语">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> Slovenian
+swe	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="瑞典语">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> Swedish
+hu	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="匈牙利语">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment>
+                                                    <string key="content"> Hungarian
+cht	</string>
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content="繁体中文">
+                                                    <attributes>
+                                                        <font key="NSFont" size="11" name=".PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                                <fragment content=" Traditional Chinese">
+                                                    <attributes>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="253" height="291"/>
+                                            <size key="minSize" width="253" height="511"/>
                                             <size key="maxSize" width="463" height="10000000"/>
                                         </textView>
                                     </subviews>
@@ -837,25 +1223,25 @@
                                     <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="CgU-N6-OgN">
-                                    <rect key="frame" x="238" y="1" width="16" height="291"/>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="CgU-N6-OgN">
+                                    <rect key="frame" x="238" y="1" width="16" height="511"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
-                            <scrollView misplaced="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogB-wQ-Z02">
-                                <rect key="frame" x="255" y="50" width="255" height="293"/>
+                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogB-wQ-Z02">
+                                <rect key="frame" x="254" y="50" width="255" height="513"/>
                                 <clipView key="contentView" id="eg1-Gm-aUL">
-                                    <rect key="frame" x="1" y="1" width="253" height="291"/>
+                                    <rect key="frame" x="1" y="1" width="253" height="511"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView editable="NO" importsGraphics="NO" richText="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="lkf-hK-8eU">
-                                            <rect key="frame" x="0.0" y="0.0" width="253" height="291"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="253" height="511"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <size key="minSize" width="253" height="291"/>
+                                            <size key="minSize" width="253" height="511"/>
                                             <size key="maxSize" width="478" height="10000000"/>
                                             <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="253" height="291"/>
+                                            <size key="minSize" width="253" height="511"/>
                                             <size key="maxSize" width="478" height="10000000"/>
                                         </textView>
                                     </subviews>
@@ -866,7 +1252,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="ukC-rb-0KI">
-                                    <rect key="frame" x="238" y="1" width="16" height="291"/>
+                                    <rect key="frame" x="238" y="1" width="16" height="511"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
@@ -900,7 +1286,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="217.5" y="691.5"/>
+            <point key="canvasLocation" x="216.5" y="801.5"/>
         </scene>
     </scenes>
 </document>
