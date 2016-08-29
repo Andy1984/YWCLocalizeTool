@@ -12,8 +12,8 @@
 @property (unsafe_unretained) IBOutlet NSTextView *inputTextView;
 @property (unsafe_unretained) IBOutlet NSTextView *outputTextView;
 @property (weak) IBOutlet NSButton *translateButton;
-@property (weak) IBOutlet NSTextField *infoLabel;
-@property (weak) IBOutlet NSTextFieldCell *infoTextLabel;
+@property (weak) IBOutlet NSTextField *sourceLanguage;
+@property (weak) IBOutlet NSTextField *destinationLanguage;
 
 @end
 

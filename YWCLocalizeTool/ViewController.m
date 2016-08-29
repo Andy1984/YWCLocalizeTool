@@ -44,23 +44,32 @@
         NSString *secret = @"Mi_MQ_2JaIDO4MpX37YU";
         NSNumber *salt = [NSNumber numberWithInteger:arc4random()%10000];
         NSString *q = needTranslate;
+        if (q == nil || [q isEqualToString:@""]) {
+            NSLog(@"kong");
+        }
         NSString *signBeforeMD5 = [NSString stringWithFormat:@"%@%@%@%@",appID,q,salt,secret];
         ;
         NSString *sign = [self getmd5WithString:signBeforeMD5];
         NSDictionary *parameters = @{
                                      @"q":q,
-                                     @"from":@"en",
-                                     @"to":@"zh",
+                                     @"from":self.sourceLanguage.stringValue,
+                                     @"to":self.destinationLanguage.stringValue,
                                      @"appid":appID,
                                      @"salt":salt,
                                      @"sign":sign
                                      };
         AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
         [manager GET:@"http://api.fanyi.baidu.com/api/trans/vip/translate" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
+            if (responseObject[@"error_code"]) {
+                NSLog(@"error -> %@", responseObject);
+                return;
+            }
+            
             [responses addObject:responseObject];
             if (responses.count == needTranslateStringArray.count) {
                 [self replaceOriginalString:mutableContent withResponses:responses];
             }
+            
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             NSLog(@"error-> %@",error);
         }];
