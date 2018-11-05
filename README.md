@@ -1,6 +1,6 @@
 # YWCLocalizeTool
 ![licecap.gif](https://raw.githubusercontent.com/Andy1984/YWCLocalizeTool/master/README.gif)
-##How to use
+## How to use
 There are three tabs
 
 * In the first tab, input what you want to translate.
@@ -10,8 +10,7 @@ There are three tabs
 
 Attention: There cannot be `";` in the comment.  The logic is search `";` and the `"` before. Extract the content in the middle and use Baidu api to translate. 
 
-
-##使用方法
+## 使用方法
 整个app分3栏
 
 * 第一栏输入要翻译的文字  
