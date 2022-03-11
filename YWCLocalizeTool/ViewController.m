@@ -37,7 +37,15 @@
         [responses addObject:@{}];
     }
     __block int factualResponsesCount = 0;
-    int tag = 0;
+    __block int tag = 0;
+    
+    NSString *from = self.sourceLanguage.stringValue;
+    NSString *to = self.destinationLanguage.stringValue;
+    
+    dispatch_semaphore_t semaphore= dispatch_semaphore_create(0); // 创建信号量
+    dispatch_queue_t queque = dispatch_queue_create("", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_async(queque, ^{
+    
     for (NSString *needTranslate in needTranslateStringArray) {
         NSNumber *appID = @20160825000027431;
         NSString *secret = @"Mi_MQ_2JaIDO4MpX37YU";
@@ -48,29 +56,39 @@
         NSString *sign = [self getmd5WithString:signBeforeMD5];
         NSDictionary *parameters = @{
                                      @"q":q,
-                                     @"from":self.sourceLanguage.stringValue,
-                                     @"to":self.destinationLanguage.stringValue,
+                                     @"from":from,
+                                     @"to":to,
                                      @"appid":appID,
                                      @"salt":salt,
                                      @"sign":sign
                                      };
+        
         AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-        [manager GET:@"http://api.fanyi.baidu.com/api/trans/vip/translate" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
+        [manager GET:@"https://fanyi-api.baidu.com/api/trans/vip/translate" parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
+            dispatch_semaphore_signal(semaphore);
             if (responseObject[@"error_code"]) {
                 NSLog(@"error -> %@", responseObject);
                 return;
             }
             [responses replaceObjectAtIndex:tag withObject:responseObject];
             factualResponsesCount++;
+            NSLog(@"%@", responseObject);
             if (factualResponsesCount == needTranslateStringArray.count) {
-                [self replaceOriginalString:mutableContent withResponses:responses];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self replaceOriginalString:mutableContent withResponses:responses];
+                });
             }
-            
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             NSLog(@"error-> %@",error);
+            dispatch_semaphore_signal(semaphore);
         }];
+        
+        dispatch_semaphore_wait(semaphore,DISPATCH_TIME_FOREVER);//当前信号量为0，一直等待阻塞线程
+        [NSThread sleepForTimeInterval:0.8]; // 保险起见可以改为1
         tag++;
     }
+    });
+
 }
 
 - (void)replaceOriginalString:(NSMutableString *)string withResponses:(NSMutableArray <NSDictionary *>*)responses
