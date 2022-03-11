@@ -13,7 +13,7 @@
 @implementation ViewController
 
 - (IBAction)translate:(id)sender {
-    
+    self.outputTextView.string = @"";
     NSMutableString *mutableContent = [NSMutableString stringWithString:self.inputTextView.textStorage.string];
     
     NSUInteger startLocation = 0;
@@ -84,8 +84,9 @@
         }];
         
         dispatch_semaphore_wait(semaphore,DISPATCH_TIME_FOREVER);//当前信号量为0，一直等待阻塞线程
-        [NSThread sleepForTimeInterval:0.8]; // 保险起见可以改为1
+        [NSThread sleepForTimeInterval:1]; // 保险起见可以改为1
         tag++;
+        NSLog(@"%zd", tag);
     }
     });
 
